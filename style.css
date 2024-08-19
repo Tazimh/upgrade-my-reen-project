@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+/* global css */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Source Sans 3", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+/* top menu css */
+
+.top-menu {
+    width: 100%;
+    height: 7vh;
+    background-color: #f5f7fa;
+    padding: 14px 0px;
+}
+.top-menu .c-part ul li {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    margin-right: 5px;
+}
+.top-menu .c-part ul {
+    display: flex;
+    margin:0px -42px auto ;
+}
+.top-menu .c-part ul li a {
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: #506a85;
+    text-decoration: none;
+    margin-left: 10px;
+}
+.top-menu .c-part ul li a:hover {
+    color: #00bc9c;
+    
+}
+.top-menu .c-part ul li i {
+    margin-right: 5px;
+}
+.c1-part ul{
+    display: flex;
+    list-style: none;
+    margin-left: 410px;
+}
+.c1-part i{
+    font-size: 15px;
+    color: #506a85;
+    text-decoration: none;
+    margin-left: 18px;
+}
+.c1-part i:hover{
+    color: #00bc9c;
+}
+/* Nav bar css */
+.main-menu{
+    /* width: 100%; */
+    opacity: 0.9;
+    Position: sticky ;
+    Top: 0;
+    Z-index: 9999;
+}
+.navbar{
+    width: 100%;
+    height: 14vh;
+    background-color: white ;
+}
+.navbar .nav-item{
+    margin-left: 5px;
+}
+.navbar .nav-item .nav-link{
+    color: #506a85;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0px 12px;
+    transition: .5s;
+}
+.navbar .nav-item .nav-link:hover{
+    color: #00bc9c;
+    transition: .5s;
+}
+.d-flex a i{
+    color: #506a85;
+}
+.d-flex a i:hover{
+    color: #00bc9c85;
+}
+/* slider section css */
+.carousel-item .carousel-caption h1{
+    font-size: 50px;
+    font-weight: 700;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.carousel-item .carousel-caption p{
+    width: 69%;
+    font-size: 16px;
+    line-height: 26px;
+    color: #a3b1bf;
+    margin: 0px auto 60px
+}
+.carousel-item .carousel-caption .now-btn a{
+    background-color: #00bc9c;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #00bc9c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.carousel-item .carousel-caption .now-btn a:hover{
+    background-color: transparent;
+    color: #00bc9c;
+    transition: 0.3s;
+
+}
+.carousel-caption{
+    padding-bottom: 220px;
+}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color: white;
+    outline-style: 2px;
+}
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {
+    filter: none;
+}
+/* about section css */
+.about-section{
+    width: 100%;
+    height: 70vh;
+}
+.about-section  h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #506a85;
+    margin-bottom: 10px;
+    padding-top: 85px;
+}
+.about-section p{
+    width: 50%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #73879c;
+}
+.icon{
+    padding: 30px 0px 0px;
+    display: flex;
+}
+.iconX h5{
+ padding-left: 8px;
+ font-size: 20px;
+    font-weight: 600;
+    color: #506a85;
+    margin-bottom: 15px;
+}
+.icon .iconX p{
+    width:81% ;
+    font-size: 14px;
+    line-height: 24px;
+    color: #73879c;
+    margin-right: 55px;
+}
+.icon .iconX .hevyx p{
+    width:91% ;
+    padding: 0px 20px;
+}
+.icon img{
+    width: 67px;
+    height: 55px;
+    margin-left: 20px;
+}
+.icon .hevy{
+    width: 60px;
+    height: 65px;
+}
+/* branding section css */
+.branding-section{
+    width: 100%;
+    height: 160vh;
+    background-color: #f5f7fa;
+}
+.branding-section h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #506a85;
+    margin-bottom: 20px;
+    padding-top: 85px;
+}
+.branding-section .titel{
+    width: 50%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #73879c;
+    padding-bottom: 65px;
+}
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 552px;
+    height: 380px;
+    border: 1px solid #f1f1f1;
+    border-radius: 10px 10px 0px 0px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: transparent;
+    color: black;
+    border-radius: 10px 10px 0px 0px;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: transparent;
+    color: white;
+    transform: rotateY(180deg);
+    border-radius: 10px 10px 0px 0px;
+  }
+  .under-card{
+    width: 100%;
+    height: 13vh;
+    background-color: #fff;
+    border: 1px solid #f1f1f1;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .under-card h2{
+    font-size: 22px;
+    font-weight: 600;
+    color: #506a85;
+    margin-bottom: 15px;
+    padding-top:18px;
+}
+.under-card p{
+    font-size: 14px;
+    color: #73879c;
+}
+  
+.owl-theme .owl-dots .owl-dot span {
+    
+    margin: 25px 7px;
+}
+/* working-section CSS */
+.working-section{
+    width: 100%;
+    height: 50vh;
+    background-color: white;
+}
+.working-section h2{
+    font-size: 35px;
+    font-weight: 600;
+    color: #506a85;
+    margin-bottom: 20px;
+    padding-top: 85px;
+}
+.working-section P{
+    width: 50%;
+    margin: 0px auto;
+    font-size: 16px;
+    line-height: 26px;
+    color: #73879c;
+    padding-bottom: 65px;
+}
+.working-section .now-btn{
+
+}
+.working-section .now-btn a{
+    background-color: #00bc9c;
+    color: white;
+    padding: 10px 30px;
+    text-decoration: none;
+    border-radius: 3px;
+    border: 1px solid #00bc9c;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    transition: 0.3s;
+}
+.working-section .now-btn a:hover{
+    background-color: transparent;
+    color: #00bc9c;
+    transition: 0.3s;
+
+}
+/* first footer css */
+.top-footer {
+    width: 100%;
+    background-color: #2f4052;
+    padding: 80px 0px;
+}
+.top-footer .inner-widget h4 {
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.top-footer .inner-widget p .fa {
+    margin-right: 10px;
+}
+.top-footer .inner-widget p {
+    font-size: 14px;
+    line-height: 24px;
+    color: #a3b1bf;
+}
+.top-footer .inner-widget a {
+    color: #a3b1bf;
+}
+.top-footer .inner-widget a:hover {
+    color: white;
+}
+.top-footer .footer-form button {
+    /* position: absolute;
+    top: 3001.5px;
+    right: 108px; */
+    background-color: #00bc9c;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    border: 2px solid #00bc9c;
+}
+.footer-form .btn{
+    position: relative;
+    margin-left: 200px;
+    margin-top: -71.5px;
+    z-index: 999;
+}
+.top-footer .form-control {
+    height: auto;
+    padding: 11px 4px;
+    background-color: #4e5c6c;
+    border: 1px solid #4e5c6c;
+    color: #828e99;
+    font-size: 14px;
+    border-radius: 5px;
+}
+.btn-primary.focus, .btn-primary:focus {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+    box-shadow: 0 0 0 .2rem rgba(38,143,255,.5);
+}
+/* bottom footer css */
+.bottom-footer {
+    width: 100%;
+    padding: 20px 0px 0px;
+    background-color: #283645;
+}
+.bottom-footer p {
+    color: #616f7d;
+    font-size: 14px;
+}
+.bottom-footer .inner-menu li {
+    list-style: none;
+    display: inline-block;
+    color: #616f7d;
+    margin-right: 10px;
+}
+.bottom-footer .inner-menu li {
+    list-style: none;
+    color: #616f7d;
+    margin-right: 10px;
+}
+.bottom-footer .inner-menu li i {
+    font-size: 5px;
+    vertical-align: middle;
+}
